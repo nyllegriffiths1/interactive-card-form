@@ -28,14 +28,20 @@
       <label for="cnumber">Card number</label><br>
       <input type="text" placeholder="e.g. 1234 5678 9123 000" name="cnumber" min="16" max="16" required><br>
       <!-- Expiration date -->
-      <label for="exp-date">exp. date (mm/yy)</label><br>
-      <input id="sm-input1" type="text" name="exp-date" placeholder="MM">
-      <input id="sm-input2" type="text" name="exp-date" placeholder="YY">
-      <!-- CVC -->
-      <label for="cvc">cvc</label><br>
-      <input id="cvc-input" type="text" placeholder="e.g. 123" required><br>
+      <div class="container-btm">
+        <div id="left-btm">
+        <label for="exp-date">exp. date (mm/yy)</label><br>
+        <input id="sm-input1" type="text" name="exp-date" placeholder="MM">
+        <input id="sm-input2" type="text" name="exp-date" placeholder="YY"><br>
+        </div>
+        <!-- CVC -->
+        <div id="right-btm">
+        <label for="cvc">cvc</label><br>
+        <input id="cvc-input" type="text"placeholder="e.g. 123" required><br>
+        </div>
+      </div>
       <!-- submit button -->
-      <input id="btn" type="submit" placeholder="Confirm">
+      <button id="btn">Confirm</button>
     </form>
   </div>
   <script src="app.js"></script>
