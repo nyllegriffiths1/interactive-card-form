@@ -162,6 +162,40 @@ form {
     border-radius: 0.625rem;
 }
 
+#cardNumberDisplay {
+    position: absolute;
+    top: 0;
+    left: -32%;
+    font-size: 1.125rem;
+    color: white;
+}
+
+#cardHolderName {
+    position: absolute;
+    top: 4%;
+    left: -32%;
+    margin-top: 1.65rem;
+    color: white;  
+}
+
+#expirationYearDisplay {
+    position: absolute;
+    top: 15%;
+    left: -1%;
+    padding-left: 2rem;
+    color: white;
+}
+
+#securityDisplay {
+    position: absolute;
+    top: 86%;
+    color: white;
+}
+
+
+
+
+
 @media (min-width: 1440px) {
     #front-card {
         left: -28%;
@@ -172,5 +206,19 @@ form {
     form {
         padding-left: 0;
     }
+    #cardNumberDisplay {
+            top: 0;
+            left: -24%;
+            font-size: 1.125rem;
+            color: white;
+        
+    }
+    #cardHolderName {
+        left: -24%;
+    }
+    #securityDisplay {
+        left: 7%;
+    }
+    
 }
 
