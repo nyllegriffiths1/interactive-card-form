@@ -18,30 +18,37 @@
       <img src="/interactive-card-form/images/bg-card-front.png" alt="card front" id="front-card">
       <!-- back card img -->
       <img src="/interactive-card-form/images/bg-card-back.png" alt="back card img" id="back-card">
+      <div id="displayCard">
+        <div id="cardNumberDisplay"></div>
+        <div id="expirationYearDisplay"></div>
+        <div id="securityDisplay"></div>
+      </div>
     </div>
     <!-- Form -->
-    <form class="card-form">
+    <form class="card-form" onsubmit="return validateCreditCard()">
       <!-- Cardholder name -->
       <label for="cname">Cardholder name</label><br>
-      <input type="text" placeholder="e.g. Jane Appleseed" name="cname" required><br>
+      <input id="cname" type="text" placeholder="e.g. Jane Appleseed" name="cname" required><br>
       <!-- Card number -->
       <label for="cnumber">Card number</label><br>
-      <input type="text" placeholder="e.g. 1234 5678 9123 000" name="cnumber" min="16" max="16" required><br>
+      <input id="cnumber" type="text" placeholder="e.g. 1234 5678 9123 000" name="cnumber" min="16" max="16" required><br>
+      <p id="error-message" class="error"></p>
       <!-- Expiration date -->
       <div class="container-btm">
         <div id="left-btm">
         <label for="exp-date">exp. date (mm/yy)</label><br>
-        <input id="sm-input1" type="text" name="exp-date" placeholder="MM">
-        <input id="sm-input2" type="text" name="exp-date" placeholder="YY"><br>
+        <input id="sm-input1" type="text" name="exp-date" placeholder="MM" min="2" max="2" required>
+        <input id="sm-input2" type="text" name="exp-date" placeholder="YY" min="2" max="2" required><br>
+        <p id="error-message-blank" class="error"></p>
         </div>
         <!-- CVC -->
         <div id="right-btm">
         <label for="cvc">cvc</label><br>
-        <input id="cvc-input" type="text"placeholder="e.g. 123" required><br>
+        <input id="cvc-input" type="text"placeholder="e.g. 123" min="3" max="3" required><br>
         </div>
       </div>
       <!-- submit button -->
-      <button id="btn">Confirm</button>
+      <button id="btn" type="submit">Confirm</button>
     </form>
   </div>
   <script src="app.js"></script>

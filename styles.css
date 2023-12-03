@@ -77,12 +77,14 @@ form {
 #sm-input1 {
     display: inline;
     width: 20%;
+
     
 }
 
 #sm-input2 {
     display: inline;
     width: 20%;
+    
     
 }
 
@@ -110,6 +112,54 @@ form {
 
 #right-btm {
     width: 50%;
+}
+
+
+.error {
+    color: red;
+    font-size: 0.625rem;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+#cname:invalid {
+    border-color: red;
+    border-radius: 0.625rem;
+}
+
+#cnumber:invalid {
+    border-color: red;
+    border-radius: 0.625rem;
+    
+}
+
+#sm-input1:invalid {
+    border-color: red;
+    border-radius: 0.625rem;
+}
+
+#sm-input2:invalid {
+    border-color: red;
+    border-radius: 0.625rem;
+}
+
+#cvc-input:invalid {
+    border-color: red;
+    border-radius: 0.625rem;
+}
+
+#cnumber:valid {
+    border-color: purple;
+    border-radius: 0.625rem;
+}
+
+#cname:valid,
+#sm-input1,
+#sm-input2,
+#cvc-input:valid {
+    border-color: purple;
+    border-radius: 0.625rem;
 }
 
 @media (min-width: 1440px) {
