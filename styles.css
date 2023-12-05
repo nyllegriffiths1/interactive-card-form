@@ -45,6 +45,13 @@ body {
     z-index: 3;
 }
 
+#card-logo {
+    position: absolute;
+    left: -34%;
+    top: -43%;
+    z-index: 99;
+}
+
 #front-card {
     position: absolute;
     left: -36%;
@@ -218,6 +225,10 @@ form {
     }
     #securityDisplay {
         left: 7%;
+    }
+    #card-logo {
+        left: -26%;
+        top: -38%;
     }
     
 }
